@@ -1,0 +1,385 @@
+{
+  "tasks": [
+    {
+      "id": "4",
+      "title": "Write project documentation",
+      "project": "Blog Platform",
+      "status": "In Progress",
+      "priority": "Medium",
+      "dueDate": "2026-10-24",
+      "completedAt": null,
+      "assigneeId": "1"
+    },
+    {
+      "title": "Build responsive task list",
+      "project": "Analytics Dashboard",
+      "status": "Completed",
+      "priority": "Medium",
+      "dueDate": "2026-10-15",
+      "id": "7hzBClHNmmk",
+      "completedAt": "2026-10-19T04:20:52.391Z",
+      "assigneeId": "4"
+    },
+    {
+      "title": "Implement task filtering",
+      "project": "Task Management App",
+      "status": "Completed",
+      "priority": "Medium",
+      "dueDate": "2026-10-15",
+      "id": "3CZZUpWoxCc",
+      "completedAt": "2026-10-19T04:20:59.114Z",
+      "assigneeId": "zzlzJdnsr08"
+    },
+    {
+      "title": "Create portfolio project cards",
+      "project": "Portfolio Website",
+      "status": "Pending",
+      "priority": "Low",
+      "dueDate": "2026-10-15",
+      "id": "GbGDcprB-AE"
+    },
+    {
+      "title": "Build chat message interface",
+      "project": "Chat Application",
+      "status": "Completed",
+      "priority": "Medium",
+      "dueDate": "2026-10-16",
+      "id": "-isAplpFCQA",
+      "completedAt": "2026-10-16T13:21:50.623Z"
+    },
+    {
+      "title": "Implement expense categories",
+      "project": "Expense Tracker",
+      "status": "Completed",
+      "priority": "Medium",
+      "dueDate": "2026-10-15",
+      "id": "jkTy1kEuyu4",
+      "completedAt": "2026-10-16T13:26:02.053Z"
+    },
+    {
+      "title": "Create task management dashboard",
+      "project": "TaskFlow Dashboard",
+      "status": "Completed",
+      "priority": "Medium",
+      "dueDate": "2026-10-17",
+      "id": "ADij4EC66fs",
+      "completedAt": "2026-10-17T06:42:49.331Z"
+    },
+    {
+      "title": "Add task priority indicators",
+      "project": "Task Management App",
+      "status": "Pending",
+      "priority": "Medium",
+      "dueDate": "2026-10-17",
+      "id": "Rr5Hr3-QeFw"
+    },
+    {
+      "title": "Design product detail page",
+      "project": "E-commerce Website",
+      "status": "Completed",
+      "priority": "Medium",
+      "dueDate": "2026-10-17",
+      "id": "LyuoQZGheuM",
+      "completedAt": "2026-10-18T12:16:40.519Z"
+    },
+    {
+      "title": "Implement shopping cart",
+      "project": "E-commerce Website",
+      "status": "Completed",
+      "priority": "Medium",
+      "dueDate": "2026-10-17",
+      "id": "r5Dsr4KYvy4",
+      "completedAt": "2026-10-18T12:17:39.347Z"
+    },
+    {
+      "title": "Create dashboard statistics cards",
+      "project": "TaskFlow Dashboard",
+      "status": "Pending",
+      "priority": "Medium",
+      "dueDate": "2026-10-17",
+      "id": "SdLojH_RW9M"
+    },
+    {
+      "title": "Design company landing page",
+      "project": "Company Website",
+      "status": "Completed",
+      "priority": "Medium",
+      "dueDate": "2026-10-18",
+      "id": "v3ObGNfO9OU",
+      "completedAt": "2026-10-19T04:21:17.832Z"
+    },
+    {
+      "title": "Build product management table",
+      "project": "SaaS Admin Dashboard",
+      "status": "Completed",
+      "priority": "Medium",
+      "dueDate": "2026-10-18",
+      "id": "tr3tkeqYGNw",
+      "completedAt": "2026-10-18T06:10:24.444Z"
+    },
+    {
+      "title": "Implement product search and filters",
+      "project": "CRM Dashboard",
+      "status": "Completed",
+      "priority": "Medium",
+      "dueDate": "2026-10-18",
+      "id": "3bThLWd79Dc",
+      "completedAt": "2026-10-18T06:11:24.223Z"
+    },
+    {
+      "title": "TaskSample",
+      "project": "Blog Platform",
+      "status": "Pending",
+      "priority": "Medium",
+      "dueDate": "2026-10-21",
+      "assigneeId": "roeAuS6jo6Y",
+      "id": "CJTBIDMfuls"
+    },
+    {
+      "title": "smart",
+      "project": "samTryName",
+      "status": "Pending",
+      "priority": "Medium",
+      "dueDate": "2026-10-23",
+      "assigneeId": "roeAuS6jo6Y",
+      "id": "beol7xgvwL4"
+    }
+  ],
+  "projects": [
+    {
+      "name": "TaskFlow Dashboard",
+      "description": "A task management dashboard for organizing tasks, tracking progress, and monitoring deadlines.",
+      "createdAt": "2026-10-17T07:48:34.323Z",
+      "id": "5plmnGttAfs"
+    },
+    {
+      "name": "E-commerce Website",
+      "description": "An online store with product listings, search, filters, product details, and a shopping cart.1",
+      "createdAt": "2026-10-17T07:55:54.506Z",
+      "id": "TXihv413KpA",
+      "memberIds": [
+        "1",
+        "zzlzJdnsr08"
+      ]
+    },
+    {
+      "name": "SaaS Admin Dashboard",
+      "description": "A SaaS administration dashboard with product management, search, filters, statistics, and reports.",
+      "createdAt": "2026-10-18T05:23:58.253Z",
+      "id": "fmM4ujG2lZw",
+      "memberIds": [
+        "4",
+        "3",
+        "1"
+      ]
+    },
+    {
+      "name": "Company Website",
+      "description": "A responsive corporate website with a landing page, service information, and contact section.",
+      "createdAt": "2026-10-18T07:03:44.703Z",
+      "id": "uvl7iVoeHwg",
+      "memberIds": [
+        "2",
+        "3"
+      ]
+    },
+    {
+      "name": "Online Bookstore",
+      "description": "An online bookstore for browsing books, viewing details, and discovering new titles.",
+      "createdAt": "2026-10-18T07:31:30.352Z",
+      "id": "QK1robyTu4s"
+    },
+    {
+      "name": "Expense Tracker",
+      "description": "An expense tracking application for recording transactions and organizing spending categories.",
+      "createdAt": "2026-10-18T07:53:19.333Z",
+      "id": "xsqxiaSMYR0"
+    },
+    {
+      "name": "Chat Application",
+      "description": "A messaging interface with conversations, message history, and a responsive layout.",
+      "createdAt": "2026-10-18T08:00:27.163Z",
+      "id": "4It_mI-U_Iw",
+      "memberIds": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "name": "Portfolio Website",
+      "description": "A personal portfolio website showcasing projects, skills, and frontend development work.",
+      "createdAt": "2026-10-18T08:03:38.213Z",
+      "id": "MGzuS2KDoW0",
+      "memberIds": [
+        "2",
+        "3"
+      ]
+    },
+    {
+      "name": "Railway Booking System",
+      "description": "A railway booking interface for searching routes, selecting journeys, and managing reservations.",
+      "createdAt": "2026-10-18T08:04:49.563Z",
+      "id": "5UX387lYY_g"
+    },
+    {
+      "name": "Task Management App",
+      "description": "A productivity application for creating tasks, assigning priorities, and tracking completion.",
+      "createdAt": "2026-10-18T08:07:11.364Z",
+      "id": "vWn1oEpnUgo"
+    },
+    {
+      "name": "Blog Platform",
+      "description": "A content publishing platform for browsing articles, reading posts, and organizing categories.",
+      "createdAt": "2026-10-18T08:11:53.745Z",
+      "id": "XDoltR-uWZk",
+      "memberIds": [
+        "2",
+        "zzlzJdnsr08",
+        "5"
+      ]
+    },
+    {
+      "name": "Learning Management System",
+      "description": "An online learning platform for organizing courses, lessons, and student progress.",
+      "createdAt": "2026-10-18T08:13:59.093Z",
+      "id": "u9mIBXZ_2aE"
+    },
+    {
+      "name": "Restaurant Website",
+      "description": "A restaurant website featuring a menu, opening hours, location, and reservation information.",
+      "createdAt": "2026-10-18T08:17:34.247Z",
+      "id": "PXMZM-5igok"
+    },
+    {
+      "name": "Fitness Tracker",
+      "description": "A fitness tracking application for recording workouts, setting goals, and monitoring activity.",
+      "createdAt": "2026-10-18T08:20:22.685Z",
+      "id": "2mzOlZZ9R4k"
+    },
+    {
+      "name": "Travel Booking App",
+      "description": "A travel booking interface for exploring destinations and organizing trips.",
+      "createdAt": "2026-10-18T08:25:00.404Z",
+      "id": "XsNEDRujn-4"
+    },
+    {
+      "name": "Inventory Management",
+      "description": "An inventory management system for tracking stock levels and organizing products.",
+      "createdAt": "2026-10-18T08:26:54.864Z",
+      "id": "cZi7WrHI29M"
+    },
+    {
+      "name": "CRM Dashboard",
+      "description": "A customer relationship management dashboard for tracking customer information and business activity.",
+      "createdAt": "2026-10-18T08:36:51.862Z",
+      "id": "nLKOOjAMS5s",
+      "memberIds": []
+    },
+    {
+      "name": "Social Media App",
+      "description": "A social media application with user profiles, posts, and an interactive feed.",
+      "createdAt": "2026-10-18T08:40:11.731Z",
+      "id": "L-bF0uxe2J8"
+    },
+    {
+      "name": "Event Management",
+      "description": "An event management system for organizing events, schedules, and attendee information.",
+      "createdAt": "2026-10-18T08:43:07.946Z",
+      "id": "rJt0hFpudIk"
+    },
+    {
+      "name": "Invoice Generator",
+      "description": "An invoicing tool for creating invoices and organizing billing information.",
+      "createdAt": "2026-10-18T08:44:43.741Z",
+      "id": "K3gvd2N44SQ"
+    },
+    {
+      "name": "Recipe Website",
+      "description": "A recipe website for discovering meals, browsing ingredients, and following cooking instructions.",
+      "createdAt": "2026-10-18T08:47:37.541Z",
+      "id": "tIrL3rZ8zQI"
+    },
+    {
+      "name": "Analytics Dashboard",
+      "description": "An analytics dashboard for presenting key metrics, charts, and performance insights.",
+      "createdAt": "2026-10-18T08:50:05.569Z",
+      "id": "cK6kCX2wybU",
+      "memberIds": [
+        "1",
+        "2",
+        "5",
+        "roeAuS6jo6Y"
+      ]
+    },
+    {
+      "name": "Job Board",
+      "description": "A job listing platform for browsing vacancies and discovering career opportunities.",
+      "createdAt": "2026-10-18T12:03:33.786Z",
+      "id": "civY6_duASg"
+    },
+    {
+      "name": "New Project",
+      "description": "New Project",
+      "createdAt": "2026-10-20T04:13:37.861Z",
+      "memberIds": [
+        "zzlzJdnsr08",
+        "3",
+        "1",
+        "2"
+      ],
+      "id": "VIMGDspjT7Q"
+    }
+  ],
+  "teamMembers": [
+    {
+      "id": "1",
+      "name": "Alex Morgan",
+      "email": "alex@example1.com",
+      "role": "Admin",
+      "status": "Active"
+    },
+    {
+      "id": "2",
+      "name": "Sarah Johnson",
+      "email": "sarah@example.com",
+      "role": "Project Manager",
+      "status": "Active"
+    },
+    {
+      "id": "3",
+      "name": "Daniel Smith",
+      "email": "daniel@example.com",
+      "role": "Developer",
+      "status": "Active"
+    },
+    {
+      "id": "4",
+      "name": "Emily Brown",
+      "email": "emily@example.com",
+      "role": "Designer",
+      "status": "Active"
+    },
+    {
+      "name": "Taha Rostami",
+      "email": "taha@yahoo.com",
+      "role": "Developer",
+      "status": "Active",
+      "id": "zzlzJdnsr08"
+    },
+    {
+      "name": "Emilia",
+      "email": "admin@example.com",
+      "role": "Developer",
+      "status": "Active",
+      "id": "8ejMJXyPrM4"
+    },
+    {
+      "name": "Sam Rostami",
+      "email": "ssam.rostami13571364@gmail.com",
+      "role": "Developer",
+      "status": "Active",
+      "id": "roeAuS6jo6Y"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
