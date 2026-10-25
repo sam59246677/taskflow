@@ -73,3 +73,13 @@ export default defineConfig([
 ])
 
 ```
+## Screenshots
+
+### Dashboard
+![TaskFlow Dashboard](screenshots/dashboard.png)
+
+### Tasks
+![TaskFlow Tasks](screenshots/tasks.png)
+
+### Projects
+![TaskFlow Projects](screenshots/projects.png)
