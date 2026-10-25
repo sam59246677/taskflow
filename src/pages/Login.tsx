@@ -74,6 +74,34 @@ function Login({ onLogin }: LoginProps) {
     onLogin(existingUser.email)
   }
 
+  function fillDemoAdmin() {
+    const demoAdmin: StoredUser = {
+      name: 'TaskFlow Admin',
+      email: 'admin@taskflow.demo',
+      password: 'TaskFlowDemo123!',
+      role: 'Admin',
+    }
+
+    const users: StoredUser[] = JSON.parse(
+      localStorage.getItem('taskflow-users') ?? '[]',
+    )
+
+    const otherUsers = users.filter(
+      (user) => user.email !== demoAdmin.email,
+    )
+
+    localStorage.setItem(
+      'taskflow-users',
+      JSON.stringify([...otherUsers, demoAdmin]),
+    )
+
+    setIsRegistering(false)
+    setName('')
+    setEmail(demoAdmin.email)
+    setPassword(demoAdmin.password)
+    setError('')
+  }
+
   function switchMode() {
     setIsRegistering((current) => !current)
     setError('')
@@ -86,19 +114,28 @@ function Login({ onLogin }: LoginProps) {
     <main className="flex min-h-screen items-center justify-center bg-slate-50 px-4 dark:bg-slate-950">
       <section className="w-full max-w-md rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8 dark:border-slate-800 dark:bg-slate-900">
         <div className="mb-8 text-center">
-          <h1 className="text-3xl font-bold text-blue-600">TaskFlow</h1>
+          <h1 className="text-3xl font-bold text-blue-600">
+            TaskFlow
+          </h1>
+
           <h2 className="mt-6 text-xl font-semibold text-slate-900 dark:text-white">
             {isRegistering ? 'Create an account' : 'Welcome back'}
           </h2>
+
           <p className="mt-2 text-sm text-slate-500">
-            {isRegistering ? 'Create your account to get started.' : 'Sign in to continue to your workspace.'}
+            {isRegistering
+              ? 'Create your account to get started.'
+              : 'Sign in to continue to your workspace.'}
           </p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-5">
           {isRegistering && (
             <div>
-              <label htmlFor="name" className="mb-2 block text-sm font-medium text-slate-700 dark:text-slate-300">
+              <label
+                htmlFor="name"
+                className="mb-2 block text-sm font-medium text-slate-700 dark:text-slate-300"
+              >
                 Full name
               </label>
 
@@ -109,15 +146,20 @@ function Login({ onLogin }: LoginProps) {
                 value={name}
                 onChange={(event) => setName(event.target.value)}
                 placeholder="Your name"
+                required
                 className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-slate-900 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 dark:border-slate-700 dark:bg-slate-800 dark:text-white"
               />
             </div>
           )}
 
           <div>
-            <label htmlFor="email" className="mb-2 block text-sm font-medium text-slate-700 dark:text-slate-300">
+            <label
+              htmlFor="email"
+              className="mb-2 block text-sm font-medium text-slate-700 dark:text-slate-300"
+            >
               Email address
             </label>
+
             <input
               id="email"
               type="email"
@@ -131,31 +173,70 @@ function Login({ onLogin }: LoginProps) {
           </div>
 
           <div>
-            <label htmlFor="password" className="mb-2 block text-sm font-medium text-slate-700 dark:text-slate-300">
+            <label
+              htmlFor="password"
+              className="mb-2 block text-sm font-medium text-slate-700 dark:text-slate-300"
+            >
               Password
             </label>
+
             <input
               id="password"
               type="password"
               autoComplete={isRegistering ? 'new-password' : 'current-password'}
               value={password}
               onChange={(event) => setPassword(event.target.value)}
-              placeholder={isRegistering ? 'At least 6 characters' : 'Enter your password'}
+              placeholder={
+                isRegistering
+                  ? 'At least 6 characters'
+                  : 'Enter your password'
+              }
               minLength={isRegistering ? 6 : undefined}
               required
               className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-slate-900 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 dark:border-slate-700 dark:bg-slate-800 dark:text-white"
             />
           </div>
 
-          {error && (<p role="alert" className="text-sm text-red-600">{error}</p>)}
-          <button type="submit" className="w-full rounded-lg bg-blue-600 px-4 py-3 font-medium text-white transition-colors hover:bg-blue-700">
+          {error && (
+            <p role="alert" className="text-sm text-red-600">
+              {error}
+            </p>
+          )}
+
+          <button
+            type="submit"
+            className="w-full rounded-lg bg-blue-600 px-4 py-3 font-medium text-white transition-colors hover:bg-blue-700"
+          >
             {isRegistering ? 'Create account' : 'Sign in'}
           </button>
         </form>
 
+        {!isRegistering && (
+          <div className="mt-4 border-t border-slate-200 pt-4 dark:border-slate-700">
+            <button
+              type="button"
+              onClick={fillDemoAdmin}
+              className="w-full rounded-lg border border-blue-300 px-4 py-3 text-sm font-medium text-blue-700 transition-colors hover:bg-blue-50 dark:border-blue-800 dark:text-blue-300 dark:hover:bg-slate-800"
+            >
+              Fill Demo Admin Credentials
+            </button>
+
+            <p className="mt-2 text-center text-xs text-slate-500">
+              For portfolio demonstration only
+            </p>
+          </div>
+        )}
+
         <p className="mt-6 text-center text-sm text-slate-500">
-          {isRegistering ? 'Already have an account? ' : "Don't have an account? "}
-          <button type="button" onClick={switchMode} className="font-medium text-blue-600 hover:text-blue-700">
+          {isRegistering
+            ? 'Already have an account? '
+            : "Don't have an account? "}
+
+          <button
+            type="button"
+            onClick={switchMode}
+            className="font-medium text-blue-600 hover:text-blue-700"
+          >
             {isRegistering ? 'Sign in' : 'Register'}
           </button>
         </p>
